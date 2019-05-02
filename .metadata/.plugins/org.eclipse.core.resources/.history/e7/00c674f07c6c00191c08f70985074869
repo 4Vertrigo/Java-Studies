@@ -1,0 +1,36 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio14 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira a suas duas notas");
+		
+		double nota1 = scan.nextDouble();
+		double nota2 = scan.nextDouble();
+		double media = (nota1 + nota2) / 2;
+		String conceito;
+		
+		System.out.printf("Nota 1: %.2f | Nota 2: %.2f | Media: %.2f ", nota1, nota2, media);
+		
+		if(media >= 9)
+			conceito = "A";
+		else if(media >= 7.5)
+			conceito = "B";
+		else if(media >= 6)
+			conceito = "C";
+		else if(media >= 4)
+			conceito = "D";
+		else
+			conceito ="E";
+			
+		System.out.print("Conceito: " + conceito + " ");
+		
+		scan.close();
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio8 {
+	
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira o preco de tres produtos");
+		
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int num3 = scan.nextInt();
+		
+		if(num1 < num2 && num1 < num3)
+			System.out.println("Voce deve comprar o primeiro produto");
+		else if(num2 < num3)
+			System.out.println("Voce deve comprar o segundo produto");
+		else
+			System.out.println("Voce deve comprar o terceiro produto");
+		
+		scan.close();
+	}
+
+}

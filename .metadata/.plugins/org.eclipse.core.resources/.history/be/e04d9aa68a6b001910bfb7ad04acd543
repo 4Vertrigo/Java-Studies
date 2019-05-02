@@ -1,0 +1,12 @@
+package cursojava.aulas.aula3;
+
+public class VariaveisChar {
+
+	public static void main(String[] args){
+		
+		char o = "o"; //1 byte
+		char i = "i";
+		
+		System.out.println(""+o+i);
+	}
+}

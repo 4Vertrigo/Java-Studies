@@ -1,0 +1,23 @@
+package cursojava.exercicios.lista1;
+
+import java.util.Scanner;
+
+public class Exercicio13 {
+	
+	public static void main(){
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Quanto voce ganha por hora?");
+		double salarioHora = scan.nextDouble();
+		System.out.println("Quantas horas voce trabalha por dia?");
+		double expediente = scan.nextDouble();
+		
+		//supondo que um mes possui 4 semanas e, portanto, 20 dias uteis
+		
+		double salarioMes = (salarioHora * expediente) * 20;
+		
+		scan.close();
+	}
+
+}

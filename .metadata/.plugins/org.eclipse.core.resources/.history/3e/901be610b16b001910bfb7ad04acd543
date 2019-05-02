@@ -1,0 +1,19 @@
+package cursojava.exercicios.lista1;
+
+import java.util.Scanner;
+
+public class Exercicio13 {
+	
+	public static void main(){
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Quanto voce ganha por hora?");
+		double salario = scan.nextDouble();
+		System.out.println("Quantas horas voce trabalha por dia?");
+		double expediente = scan.nextDouble();
+		
+		scan.close();
+	}
+
+}

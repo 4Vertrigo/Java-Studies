@@ -1,0 +1,90 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio23 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira o codigo de acordo com a carne que voce quer comprar:");
+		System.out.println("1- File duplo (R$ 5.80 por kg + taxa de quantidade");
+		System.out.println("2- Alcatra (R$ 6.80 por kg + taxa de quantidade");
+		System.out.println("3- Picanha (R$ 7.80 por kg + taxa de quantidade");
+		byte escolha = scan.nextByte();
+		String carne = "";
+		String formaPagamento = "";
+		double preco = 0;
+		double valorDesconto = 0;
+		double valorFinal = 0;
+		
+		switch (escolha)
+		{
+			case 1:
+				carne = "File duplo";
+				preco = 5.8;
+				break;
+				
+			case 2:
+				carne = "Alcatra";
+				preco = 6.8;
+				break;
+				
+			case 3:
+				carne = "Picanha";
+				preco = 7.8;
+				break;
+				
+			default:
+				System.out.println("Opcao invalida, compra cancelada!");
+				System.exit(0);
+		}
+		
+		System.out.println("Insira agora a quantidade que deseja (em kg):");
+		double quantidade = scan.nextDouble();
+		
+		if(quantidade <= 5)
+		{
+			preco = preco - 0.9;
+			System.out.printf("Como sua compra foi de ate 5kg, sera cobrado %.2f por kg da %s\n", preco, carne);
+		}
+		
+		preco = preco * quantidade;
+		valorFinal = preco;
+		
+		System.out.println("Insira o codigo de acordo com a forma de pagamento");
+		System.out.println("1 - Cartao tabajara (5% de desconto)");
+		System.out.println("2 - Outro metodo");
+		escolha = scan.nextByte();
+		
+		
+		switch (escolha)
+		{
+			case 1:
+				formaPagamento = "Cartao Tabajara";
+				valorDesconto = (preco * 0.05);
+				preco = preco - valorDesconto;
+				break;
+			
+			case 2:
+				formaPagamento = "Dinheiro ou Cartao";
+				break;
+				
+			default:
+				System.out.println("Opcao Invalida, compra cancelada!");
+				System.exit(0);
+		}
+		
+		System.out.println("CUPOM FISCAL");
+		System.out.println("Tipo de carne: " + carne);
+		System.out.printf("Quantidade: %.2fkg\n", quantidade);
+		System.out.printf("Preco total: R$ %.2f\n", valorFinal);
+		System.out.println("Forma de pagamento: " + formaPagamento);
+		System.out.printf("Valor do desconto: R$ %.2f\n", valorDesconto);
+		System.out.printf("Valor a pagar: R$ %.2f\n", preco);
+		
+		scan.close();
+	}
+
+}

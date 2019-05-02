@@ -1,0 +1,36 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio12 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira quanto voce ganha por hora");
+		double salario = scan.nextDouble();
+		System.out.println("Insira quantas horas voce trabalha por dia");
+		int horas = scan.nextInt();
+		
+		//supondo que um mes tem 4 semanas e, portanto 20 dias uteis
+		
+		salario = (salario * horas) * 20;
+		
+		
+		if(salario <= 900)
+			ir = 0;
+		if(salario <= 1500)
+		
+		double ir = salario * ir;
+		double inss = salario * 0.1;
+		double fgts = salario * 0.11;
+		double totalDescontos = ir + inss;
+		double salarioLiquido = salario - (totalDescontos + fgts);
+		
+				
+		
+		scan.close();
+	}
+
+}

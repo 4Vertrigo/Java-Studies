@@ -1,0 +1,11 @@
+package cursojava.aulas.aula4;
+
+import java.util.Scanner;
+
+public class LeituraDoTeclado {
+
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+	}
+}

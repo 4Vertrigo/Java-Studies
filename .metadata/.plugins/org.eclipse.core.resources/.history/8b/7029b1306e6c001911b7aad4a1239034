@@ -1,0 +1,29 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio11 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite seu salario");
+		
+		double salarioAntigo = scan.nextDouble();
+		double salarioNovo;
+		System.out.printf("Salario antigo: %.2f\n");
+		
+		if(salarioAntigo < 280)
+		{
+			salarioNovo = salarioAntigo + (salarioAntigo * 0.2);
+			
+			System.out.println("Porcentual: 20%"); 
+		}
+		
+		
+		Valor do aumento: %.2f\nNovo Salario: %.2f", salarioNovo - salarioAntigo, salarioNovo);
+		scan.close();
+	}
+
+}

@@ -1,0 +1,79 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio23 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira o codigo de acordo com a carne que voce quer comprar:");
+		System.out.println("1- File duplo (R$ 4.90 por kg + taxa de quantidade");
+		System.out.println("2- Alcatra (R$ 5.90 por kg + taxa de quantidade");
+		System.out.println("3- Picanha (R$ 6.90 por kg + taxa de quantidade");
+		byte escolha = scan.nextByte();
+		String carne = "";
+		String formaPagamento = "";
+		double preco = 0;
+		
+		switch (escolha)
+		{
+			case 1:
+				carne = "File duplo";
+				preco = 4.9;
+				break;
+				
+			case 2:
+				carne = "Alcatra";
+				preco = 5.9;
+				break;
+				
+			case 3:
+				carne = "Picanha";
+				preco = 6.9;
+				break;
+				
+			default:
+				System.out.println("Opcao invalida, compra cancelada!");
+				System.exit(0);
+		}
+		
+		System.out.println("Insira agora a quantidade que deseja (em kg):");
+		double quantidade = scan.nextDouble();
+		
+		if(quantidade > 5)
+		{
+			preco = preco + 0.9;
+			System.out.printf("Voce esta comprando mais do que o permitido, sera cobrado %.2f por kg da %s\n", preco, carne);
+		}
+		
+		preco = preco * quantidade;
+		
+		System.out.println("Insira o codigo de acordo com a forma de pagamento");
+		System.out.println("1 - Cartao tabajara (5% de desconto");
+		System.out.println("2 - Outro metodo");
+		escolha = scan.nextByte();
+		
+		
+		switch (escolha)
+		{
+			case 1:
+				formaPagamento = "Cartao Tabajara";
+				preco = preco - (preco * 0.05);
+				break;
+			
+			case 2:
+				formaPagamento = "Dinheiro ou Cartao";
+				break;
+				
+			default:
+				System.out.println("Opcao Invalida, compra cancelada!");
+				System.exit(0);
+				break;
+		}
+		
+		scan.close();
+	}
+
+}

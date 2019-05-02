@@ -1,0 +1,24 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		char opcao = scan.next().charAt(0);
+		
+		if(opcao == 'M')
+			System.out.print("Masculino");
+		else if(opcao == 'F')
+			System.out.print("Feminino");
+		else
+			System.out.print("Sexo Invalido");
+		
+		
+		scan.close();
+	}
+
+}

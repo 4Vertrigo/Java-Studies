@@ -1,0 +1,30 @@
+package cursojava.aulas.aula4;
+
+import java.util.Scanner;
+
+public class LeituraDoTeclado {
+
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Digite seu nome completo: ");
+		String nomeCompleto = scan.nextLine();
+		System.out.println("Seu nome completo eh: " + nomeCompleto);
+		
+		System.out.print("Digite seu primeiro nome: ");
+		String primeiroNome = scan.next();
+		System.out.println("Seu primeiro nome eh " + primeiroNome);
+		
+		System.out.print("Digite sua idade: ");
+		int idade = scan.nextInt();
+		System.out.println("Sua idade eh: " + idade);
+		
+		System.out.print("Digite sua altura: ");
+		double altura = scan.nextDouble();
+		System.out.println("Sua altura eh: " + altura);
+		
+		System.out.print("");
+		
+	}
+}

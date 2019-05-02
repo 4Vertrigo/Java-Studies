@@ -1,0 +1,62 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio19 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira dois numeros");
+		
+		int numero1 = scan.nextInt();
+		int numero2 = scan.nextInt();
+		int resultado = 0;
+		
+		System.out.println("Digite a operacao que deseja realizar (+ - * /)");
+		String operacao = scan.next();
+		
+		switch (operacao)
+		{
+			case "+":
+				resultado = numero1 + numero2;
+				break;
+			
+			case "-":
+				resultado = numero1 - numero2;
+				break;
+			
+			case "*":
+				resultado = numero1 * numero2;
+				break;
+				
+			case "/":
+				resultado = numero1 / numero2;
+				break;
+				
+			default:
+				System.out.println("A operacao digitada nao eh valida");
+				System.exit(0);
+		}
+		
+		System.out.println("O resultado da operacao eh: " + resultado);
+		System.out.println("ESTUDO DO NUMERO");
+		
+		if(resultado % 2 == 0)
+			System.out.println("Numero par");
+		else
+			System.out.println("Numero impar");
+		
+		if(resultado < 0)
+			System.out.println("Numero negativo");
+		else if(resultado > 0)
+			System.out.println("Numero positivo");
+		else
+			System.out.println("Numero neutro");
+		
+		
+		scan.close();
+	}
+
+}

@@ -1,0 +1,21 @@
+package cursojava.exercicios.lista2;
+
+import java.util.Scanner;
+
+public class Exercicio16 {
+
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira os valores de \"a b c\" da equacao de segundo grau");
+		
+		double a = scan.nextDouble();
+		double b = scan.nextDouble();
+		double c = scan.nextDouble();
+		
+		
+		
+		scan.close();
+	}
+}
