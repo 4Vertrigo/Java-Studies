@@ -18,6 +18,7 @@ java_multi_line_comment=153,150,139
 java_operator=243,246,238
 java_single_line_comment=153,150,139
 java_string=149,228,84
+markOccurrences=false
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=16
 org.eclipse.jdt.ui.javadoclocations.migrated=true

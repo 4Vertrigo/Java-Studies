@@ -1,0 +1,28 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio5 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		int populacaoA = 80000;
+		int populacaoB = 200000;
+		int ano = 0;
+		
+		while(populacaoA <= populacaoB)
+		{
+			populacaoA += (populacaoA * 0.03);
+			populacaoB += (populacaoB * 0.015);
+			ano++;
+			
+			System.out.println("Estamos no ano " + ano + " e as populacoes estao assim:");
+			System.out.println("Populacao do pais A " + populacaoA + " Populacao do pais B " + populacaoB);
+		}
+		
+		scan.close();
+	}
+
+}

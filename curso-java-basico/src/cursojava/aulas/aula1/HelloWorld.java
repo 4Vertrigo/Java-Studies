@@ -1,3 +1,5 @@
+package cursojava.aulas.aula1;
+
 public class HelloWorld {
 
 	public static void main(String[] args) {

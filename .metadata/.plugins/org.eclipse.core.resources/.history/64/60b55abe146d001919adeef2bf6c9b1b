@@ -1,0 +1,22 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira uma nota de 0 a 10");
+		
+		double nota = scan.nextDouble();
+		
+		if(nota < 0 || nota > 10)
+		{
+			System.out.println("Entrada invalida");
+			System.exit(0);
+		}
+	}
+
+}

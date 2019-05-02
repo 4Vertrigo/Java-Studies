@@ -1,0 +1,43 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		boolean validade;
+		String nome;
+		int idade;
+		double salario;
+		String sexo;
+		String estadoCivil;
+		
+		do
+		{
+			System.out.println("Digite seu nome");
+			nome = scan.next();
+			System.out.println("Digite sua idade");
+			idade = scan.nextInt();
+			System.out.println("Digite seu salario");
+			salario = scan.nextDouble();
+			System.out.println("Digite seu sexo");
+			sexo = scan.next();
+			System.out.println("Digite seu estado civil");
+			estadoCivil = scan.next();
+			
+			if(nome.length() <= 3 ||
+					(idade < 0 || idade > 150) ||
+					salario <= 0 ||
+					(sexo.equalsIgnoreCase("f") || sexo.equalsIgnoreCase("m"))
+					)
+				validade = false;
+		
+		}while(validade);
+		
+		scan.close();
+	}
+
+}
