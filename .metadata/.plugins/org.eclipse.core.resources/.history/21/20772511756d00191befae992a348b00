@@ -1,0 +1,18 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio31 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira o salario inicial");
+		int salario = scan.nextInt();
+		
+		scan.close();
+	
+	}
+
+}

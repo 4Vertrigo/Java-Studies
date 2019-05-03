@@ -1,0 +1,42 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio27 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		boolean condicao = true;
+		String opcao;
+		
+		
+		while(condicao)
+		{
+			while(true)
+			{
+				System.out.println("Voce deseja inserir mais alguma temperatura? Digite 'Sim' ou 'Nao'");
+				opcao = scan.next();
+			
+				if(opcao.equalsIgnoreCase("Sim"))
+				{
+					condicao = true;
+					break;
+				}
+			
+				else if(opcao.equalsIgnoreCase("Nao"))
+				{
+					condicao = false;
+					break;
+				}
+			
+				else
+					System.out.println("Opcao invalida");
+			}
+		}
+		
+		scan.close();
+	}
+
+}

@@ -1,0 +1,26 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio25 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Lojas Tabajara");
+		double precoProduto;
+		int i = 1;
+		
+		do
+		{
+			System.out.print("Produto "+ i +": R$ ");
+			precoProduto = scan.nextDouble();
+			i++;
+		}while(precoProduto != 0);
+		
+		
+		scan.close();
+	}
+
+}

@@ -1,0 +1,22 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio36 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Insira a quantidade de termos:");
+		int termos = scan.nextInt();
+		double soma = 0;
+		
+		for(int i = 0; i < termos; i++)
+			soma += (double) 1 / (double) (i + 1);
+		
+		System.out.println(soma);
+		scan.close();
+	}
+
+}

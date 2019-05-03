@@ -1,0 +1,35 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio15 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int num1 = 1;
+		int num2 = 1;
+		int termo = 1;
+		int aux;
+		
+		//comecando do termo 0
+		System.out.println("Digite o N termo que voce quer saber da sequencia de fibonacci");
+		int n = scan.nextInt();
+		System.out.println("O termo 0 eh igual a: " + 1);
+		System.out.println("O termo 1 eh igual a: " + 1);
+		
+		for(int i = 1; i < n; i++)
+		{
+			termo = num1 + num2;
+			aux = num1;
+			num1 = termo;
+			num2 = aux;
+			System.out.println("O termo "+ (i+1) +" pedido eh igual a: " + termo);
+		}
+		
+		
+		scan.close();
+	}
+
+}

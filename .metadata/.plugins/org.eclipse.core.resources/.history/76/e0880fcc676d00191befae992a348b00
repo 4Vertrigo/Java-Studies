@@ -1,0 +1,22 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio29 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		//implementaremos o exercicio a seguir usando o crivo de erastotenes
+		
+		System.out.println("Insira o valor limite que deseja saber de numeros primos");
+		int max = scan.nextInt();
+		
+		int raiz = Math.sqrt(max);
+		
+		
+		scan.close();
+	}
+
+}

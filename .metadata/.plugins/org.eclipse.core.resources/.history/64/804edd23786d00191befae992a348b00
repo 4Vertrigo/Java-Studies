@@ -1,0 +1,41 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio32 {
+
+	public static void main(String[] args) {
+
+		String opcao;
+		boolean condicao = true;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		While(condicao)
+		{
+			while(true)
+			{
+				System.out.println("Voce deseja pedir algo mais? Digite 'Sim' ou 'Nao'");
+				opcao = scan.next();
+			
+				if(opcao.equalsIgnoreCase("Sim"))
+				{
+					condicao = true;
+					break;
+				}
+			
+				else if(opcao.equalsIgnoreCase("Nao"))
+				{
+					condicao = false;
+					break;
+				}
+			
+				else
+					System.out.println("Opcao invalida");
+			}
+		}
+		
+		scan.close();
+	}
+
+}

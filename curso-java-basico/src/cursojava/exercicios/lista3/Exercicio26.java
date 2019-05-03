@@ -1,0 +1,33 @@
+package cursojava.exercicios.lista3;
+
+import java.util.Scanner;
+
+public class Exercicio26 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Fatorial de: ");
+		int num = scan.nextInt();
+		
+		if(num > 1)
+			System.out.print(num + "! = " + num + " . ");
+		else
+			System.out.print(num + "! = ");
+		
+		for(int i = num - 1; i >= 1; i--)
+		{
+			if(i != 1)
+				System.out.print(i + " . ");
+			else
+				System.out.print(i + " = ");
+			num *= i;
+		}
+		
+		System.out.println(num);
+		
+		scan.close();
+	}
+
+}
