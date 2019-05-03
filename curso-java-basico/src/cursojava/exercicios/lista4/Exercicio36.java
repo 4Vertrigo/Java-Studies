@@ -1,0 +1,20 @@
+package cursojava.exercicios.lista4;
+
+import java.util.Scanner;
+
+public class Exercicio36 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int[] a = new int[11];
+		
+		for(int i = 0; i < 11; i++)
+			a[i] = (int) Math.pow(2, i);
+		
+		for(int i = 0; i < 10; i++)
+			System.out.println("A[" + i + "] = " + a[i]);
+		
+		scan.close();
+	}
+}

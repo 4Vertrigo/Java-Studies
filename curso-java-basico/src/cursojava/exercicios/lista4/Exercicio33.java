@@ -1,0 +1,44 @@
+package cursojava.exercicios.lista4;
+
+import java.util.Scanner;
+
+public class Exercicio33 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int[] a = new int[10];
+		boolean primo;
+		
+		System.out.println("Preencha o array com dez elementos");
+		
+		for(int i = 0; i < 10; i++)
+			a[i] = scan.nextInt();
+				
+		
+		//Essa abordagem ignora os numeros negativos
+		for(int i = 0; i < 10; i++)
+		{
+			primo = true;
+			
+			System.out.print("A[" + i + "] = " + a[i]);
+			
+			for(int j = 2; j < a[i]; j++)
+			{
+				if(a[i] % j == 0)
+				{
+					primo = false;
+					break;
+				}
+			}
+			
+			if(primo && a[i] > 1)
+				System.out.println(" eh primo");
+			else
+				System.out.println(" nao eh primo");
+		}
+		
+		scan.close();
+	}
+
+}

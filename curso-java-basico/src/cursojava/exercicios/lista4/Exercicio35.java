@@ -1,0 +1,34 @@
+package cursojava.exercicios.lista4;
+
+import java.util.Scanner;
+
+public class Exercicio35 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int[] a = new int[10];
+		
+		System.out.println("Preencha o array com dez elementos");
+		
+		for(int i = 0; i < 10; i++)
+			a[i] = scan.nextInt();
+				
+		
+		//Essa abordagem ignora os numeros negativos
+		for(int i = 0; i < 10; i++)
+		{
+			
+			System.out.print("A[" + i + "] = " + a[i] + " ( ");
+			
+			for(int j = 1; j <= a[i]; j++)
+				if(a[i] % j == 0)
+					System.out.print(j + " ");
+			
+			System.out.println(")");
+		}
+		
+		scan.close();
+	}
+
+}

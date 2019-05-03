@@ -1,0 +1,16 @@
+package cursojava.exercicios.lista4;
+
+public class Exercicio20 {
+
+	public static void main(String[] args) {
+
+		double[] a = new double[10];
+		double cotacao = 3.96;
+		
+		for(int i = 0; i < 20; i++)
+		{
+			a[i] = i * cotacao;
+			System.out.println("A[" + i + "] = " + a[i]);
+		}
+	}
+}
