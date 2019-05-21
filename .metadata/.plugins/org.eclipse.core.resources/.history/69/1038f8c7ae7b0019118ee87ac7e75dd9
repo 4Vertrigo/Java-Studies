@@ -1,0 +1,46 @@
+package cursojava.exercicios.lista5;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		String[][] compromissos = new String[31][24];
+		boolean sair = false;
+		byte opcao;
+		
+		
+		while(!sair)
+		{
+			System.out.println("Digite 1 para adicionar compromisso");
+			System.out.println("Digite 2 para verificar compromisso");
+			System.out.println("Digite 0 para sair");
+			
+			opcao = scan.nextByte();
+			
+			switch (opcao) {
+			case '0':
+				sair = true;
+			break;
+			case '1':
+				
+			break;
+			
+			case '2':
+				
+			break;
+			
+			default:
+				System.out.println("Opcao invalida, digite novamente");
+			break;
+			}
+		}
+		
+		
+		
+		scan.close();
+	}
+
+}

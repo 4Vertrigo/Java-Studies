@@ -1,0 +1,26 @@
+package cursojava.exercicios.lista5;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		string[][] tabuleiro = new char[3][3];
+		System.out.println("Bem vindo ao jogo da velha!");
+		System.out.println("Jogador 1 - X");
+		System.out.println("Jogador 2 - O");
+		
+		for(int i = 0; i < tabuleiro.length; i++)
+		{
+			for(int j = 0; j < tabuleiro[i].length; j++)
+			{
+				if(tabuleiro[i][j] == null) System.out.println("Oi");
+			}
+		}
+		
+		scan.close();
+	}
+
+}

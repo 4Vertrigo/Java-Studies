@@ -1,0 +1,154 @@
+package cursojava.exercicios.lista5;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		String[][] tabuleiro = new String[3][3];
+		System.out.println("Bem vindo ao jogo da velha!");
+		System.out.println("Jogador 1 - X");
+		System.out.println("Jogador 2 - O");
+		boolean vitoria = false;
+		int jogada = 0;
+		int x = 0;
+		int y = 0;
+		
+		
+		while(!vitoria)
+		{
+			if(jogada % 2 == 0)
+			{
+				System.out.println("Escolha a posicao que voce jogara (Jogador 1)");
+				
+				boolean jogadaValida = false;
+				
+				while(!jogadaValida)
+				{			
+					for(int i = 0; i < tabuleiro.length; i++)
+					{
+						for(int j = 0; j < tabuleiro[i].length; j++)
+						{
+							if(tabuleiro[i][j] != null) 
+								System.out.print("X - " + i + "Y - " + j + " " + tabuleiro[i][j] + " ");
+							else
+								System.out.println("X - " + i + "Y - " + j + " _ ");
+						}
+					}
+					
+					System.out.println("Insira um X e um Y valido no tabuliero:");
+					System.out.print("X: ");
+					x = scan.nextInt();
+					System.out.print("Y: ");
+					y = scan.nextInt();
+					
+					if(tabuleiro[x][y] == null)
+					{
+						tabuleiro[x][y] = "X";
+						jogadaValida = true;
+					}
+					else
+						System.out.println("Jogada invalida, tente novamente!");
+				}
+			}
+			
+			else
+			{
+				System.out.println("Escolha a posicao que voce jogara (Jogador 2)");
+				
+				boolean jogadaValida = false;
+				
+				while(!jogadaValida)
+				{			
+					for(int i = 0; i < tabuleiro.length; i++)
+					{
+						for(int j = 0; j < tabuleiro[i].length; j++)
+						{
+							if(tabuleiro[i][j] != null) 
+								System.out.print("X - " + i + "Y - " + j + " " + tabuleiro[i][j] + " ");
+							else
+								System.out.print("X - " + i + "Y - " + j + " _ ");
+						}
+						
+						System.out.print("\n");
+					}
+					
+					System.out.println("Insira um X e um Y valido no tabuliero:");
+					System.out.print("X: ");
+					x = scan.nextInt();
+					System.out.print("Y: ");
+					y = scan.nextInt();
+					
+					if(tabuleiro[x][y] == null)
+					{
+						tabuleiro[x][y] = "O";
+						jogadaValida = true;
+					}
+					else
+						System.out.println("Jogada invalida, tente novamente!");
+				}
+			}
+		
+			//vitoria jogador 1
+			
+			if( (tabuleiro[0][0] == "X" && tabuleiro[1][1] == "X" && tabuleiro[2][2] == "X") ||
+				(tabuleiro[0][2] == "X" && tabuleiro[1][1] == "X" && tabuleiro[2][0] == "X") ||
+				(tabuleiro[0][0] == "X" && tabuleiro[0][1] == "X" && tabuleiro[0][2] == "X") ||
+				(tabuleiro[1][0] == "X" && tabuleiro[1][1] == "X" && tabuleiro[1][2] == "X") ||
+				(tabuleiro[2][0] == "X" && tabuleiro[2][1] == "X" && tabuleiro[2][2] == "X") ||
+				(tabuleiro[0][0] == "X" && tabuleiro[1][0] == "X" && tabuleiro[2][0] == "X") ||
+				(tabuleiro[0][1] == "X" && tabuleiro[1][1] == "X" && tabuleiro[2][1] == "X") ||
+				(tabuleiro[0][2] == "X" && tabuleiro[1][2] == "X" && tabuleiro[2][2] == "X")
+			  )
+			{
+				vitoria = true;
+				System.out.println("Vitoria do jogador 1");
+			}
+			//vitoria jogador 2
+			else if( (tabuleiro[0][0] == "O" && tabuleiro[1][1] == "O" && tabuleiro[2][2] == "O") ||
+					 (tabuleiro[0][2] == "O" && tabuleiro[1][1] == "O" && tabuleiro[2][0] == "O") ||
+					 (tabuleiro[0][0] == "O" && tabuleiro[0][1] == "O" && tabuleiro[0][2] == "O") ||
+					 (tabuleiro[1][0] == "O" && tabuleiro[1][1] == "O" && tabuleiro[1][2] == "O") ||
+					 (tabuleiro[2][0] == "O" && tabuleiro[2][1] == "O" && tabuleiro[2][2] == "O") ||
+					 (tabuleiro[0][0] == "O" && tabuleiro[1][0] == "O" && tabuleiro[2][0] == "O") ||
+					 (tabuleiro[0][1] == "O" && tabuleiro[1][1] == "O" && tabuleiro[2][1] == "O") ||
+					 (tabuleiro[0][2] == "O" && tabuleiro[1][2] == "O" && tabuleiro[2][2] == "O")
+				   )
+			{
+				vitoria = true;
+				System.out.println("Vitoria do jogador 2");
+			}
+			//velha
+			else
+			{
+				boolean key = true;
+				
+				for(int i = 0; i < tabuleiro.length; i++)
+				{
+					for(int j = 0; j < tabuleiro[i].length; j++)
+					{
+						if(tabuleiro[i][j] == null)
+						{
+							key = false;
+							break;
+						}
+					}
+				}
+				
+				
+				if(key)
+				{
+					vitoria = true;
+					System.out.println("Deu velha!");
+				}	
+			}
+			
+			jogada++;
+		}
+		
+		scan.close();
+	}
+
+}

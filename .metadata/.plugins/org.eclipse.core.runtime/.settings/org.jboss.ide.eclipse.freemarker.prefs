@@ -1,9 +1,9 @@
-color.comment=153,150,139
-color.directive=243,246,238
-color.interpolation=138,198,242
+color.comment=102,102,102
+color.directive=247,197,39
+color.interpolation=153,153,153
 color.oppositeRegion=97,97,97
-color.string=149,228,84
-color.text=246,243,232
-color.xmlComment=153,150,139
-color.xmlTag=212,196,169
+color.string=0,164,15
+color.text=255,255,255
+color.xmlComment=102,102,102
+color.xmlTag=247,197,39
 eclipse.preferences.version=1

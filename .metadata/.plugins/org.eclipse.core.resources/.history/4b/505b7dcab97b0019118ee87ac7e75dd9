@@ -1,0 +1,94 @@
+package cursojava.exercicios.lista5;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		String[][] tabuleiro = new String[3][3];
+		System.out.println("Bem vindo ao jogo da velha!");
+		System.out.println("Jogador 1 - X");
+		System.out.println("Jogador 2 - O");
+		boolean vitoria = false;
+		int jogada = 0;
+		int x = 0;
+		int y = 0;
+		
+		
+		while(!vitoria)
+		{
+			if(jogada % 2 == 0)
+			{
+				System.out.println("Escolha a posicao que voce jogara (Jogador 1)");
+				
+				boolean jogadaValida = false;
+				
+				while(!jogadaValida)
+				{			
+					for(int i = 0; i < tabuleiro.length; i++)
+					{
+						for(int j = 0; j < tabuleiro[i].length; j++)
+						{
+							if(tabuleiro[i][j] != null) 
+								System.out.print("X - " + i + "Y - " + j + " " + tabuleiro[i][j] + " ");
+							else
+								System.out.println("X - " + i + "Y - " + j + " _ ");
+						}
+					}
+					
+					System.out.println("Insira um X e um Y valido no tabuliero:");
+					System.out.print("X: ");
+					x = scan.nextInt();
+					System.out.print("Y: ");
+					y = scan.nextInt();
+					
+					if(tabuleiro[x][y] == null)
+						jogadaValida = true;
+					else
+						System.out.println("Jogada invalida, tente novamente!");
+				}
+			}
+			
+			else
+			{
+				System.out.println("Escolha a posicao que voce jogara (Jogador 2)");
+				
+				boolean jogadaValida = false;
+				
+				while(!jogadaValida)
+				{			
+					for(int i = 0; i < tabuleiro.length; i++)
+					{
+						for(int j = 0; j < tabuleiro[i].length; j++)
+						{
+							if(tabuleiro[i][j] != null) 
+								System.out.print("X - " + i + "Y - " + j + " " + tabuleiro[i][j] + " ");
+							else
+								System.out.println("X - " + i + "Y - " + j + " _ ");
+						}
+					}
+					
+					System.out.println("Insira um X e um Y valido no tabuliero:");
+					System.out.print("X: ");
+					x = scan.nextInt();
+					System.out.print("Y: ");
+					y = scan.nextInt();
+					
+					if(tabuleiro[x][y] == null)
+					{
+						tabuleiro[x][y] = 'X';
+						jogadaValida = true;
+					}
+					else
+						System.out.println("Jogada invalida, tente novamente!");
+				}
+			}
+			
+			jogada++;
+		}
+		scan.close();
+	}
+
+}

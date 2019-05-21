@@ -1,0 +1,76 @@
+package cursojava.exercicios.lista5;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		
+		int[][] matriz = new int[10][10];
+		int maiorLinha5 = -1;
+		int menorLinha5 = 10;
+		int maiorColuna7 = -1;
+		int menorColuna7 = 10;
+		
+
+		
+		for(int i = 0; i < matriz.length; i++)
+		{
+			for(int j = 0; j < matriz[i].length; j++)
+			{
+				matriz[i][j] = (int) Math.round(Math.random() * 9);
+				
+				
+				if(i == 4)
+				{
+					if(matriz[i][j] > maiorLinha5)
+						maiorLinha5 = matriz[i][j];
+					
+					if(matriz[i][j] < menorLinha5)
+						menorLinha5 = matriz[i][j];
+				}
+				
+				if(j == 6)
+				{
+					if(matriz[i][j] > maiorColuna7)
+						maiorColuna7 = matriz[i][j];
+					if(matriz[i][j] < menorColuna7)
+						menorColuna7 = matriz[i][j];
+				}
+			}
+		}
+		
+		/*
+		i = 4;
+		
+		for(j = 0; j < matriz[i].length; j++)
+		{
+			if(matriz[i][j] > maiorLinha5)
+				maiorLinha5 = matriz[i][j];
+			
+			if(matriz[i][j] < menorLinha5)
+				menorLinha5 = matriz[i][j];
+		}
+		
+		j = 6;
+		
+		for(i = 0; i < matriz.length; i++)
+		{
+			if(matriz[i][j] > maiorColuna7)
+				maiorColuna7 = matriz[i][j];
+			
+			if(matriz[i][j] < menorColuna7)
+				menorColuna7 = matriz[i][j];
+		}*/
+		
+		System.out.println("O maior e o menor termos da linha 5 dessa matriz sao, respectivamente " + maiorLinha5 + " e " + menorLinha5);
+		System.out.println("O maior e o menor termos da coluna 7 dessa matriz sao, respectivamente " + maiorColuna7 + " e " + menorColuna7);
+		
+		for(int i = 0; i < matriz.length; i++)
+		{
+			for(int j = 0; j < matriz[i].length; j++)
+				System.out.print(matriz[i][j] + " ");
+			System.out.println();
+		}
+
+	}
+
+}

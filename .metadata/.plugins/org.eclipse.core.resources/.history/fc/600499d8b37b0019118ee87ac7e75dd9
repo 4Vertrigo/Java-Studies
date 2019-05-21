@@ -1,0 +1,148 @@
+package cursojava.exercicios.lista5;
+
+import java.util.Scanner;
+
+public class Exercicio5 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		String[][][] compromissos = new String[12][31][8];
+		boolean sair = false;
+		byte opcao;
+		boolean mesValido;
+		int mes;
+		boolean diaValido;
+		int dia;
+		boolean horaValida;
+		int hora;
+		
+		
+		while(!sair)
+		{
+			System.out.println("Digite 1 para adicionar compromisso");
+			System.out.println("Digite 2 para verificar compromisso");
+			System.out.println("Digite 0 para sair");
+			
+			opcao = scan.nextByte();
+			
+			switch (opcao) {
+			
+			case 0:
+			
+				sair = true;
+			break;
+			
+			case 1:
+				
+				mesValido = false;
+				mes = 0;
+				
+				while(!mesValido)
+				{
+					System.out.println("Entre com um mês");
+					mes = scan.nextInt();
+					mes--;
+					
+					if(mes >= 0 && mes < 12)
+						mesValido = true;
+					else
+						System.out.println("Mes invalido, digite novamente");
+				}
+				
+				
+				diaValido = false;
+				dia = 0;
+				
+				while(!diaValido)
+				{
+					System.out.println("Entre com o dia do mês");
+					dia = scan.nextInt();
+					dia--;
+					
+					if(dia >= 0 && dia < 31)
+						diaValido = true;
+					else
+						System.out.println("Dia invalido, digite novamente");
+				}
+				
+				horaValida = false;
+				hora = 0;
+				
+				while(!horaValida)
+				{
+					System.out.println("Entre com a hora do compromisso (8h - 16h)");
+					hora = scan.nextInt();
+					hora -= 8;
+					
+					if(hora >= 0 && hora < 8)
+						horaValida = true;
+					else
+						System.out.println("hora invalida, digite novamente");
+				}
+				
+				System.out.print("Insira um compromisso: ");
+				
+				compromissos[mes][dia][hora] = scan.next();
+			break;
+			
+			case 2:
+				
+				mesValido = false;
+				mes = 0;
+				
+				while(!mesValido)
+				{
+					System.out.println("Entre com um mês");
+					mes = scan.nextInt();
+					mes--;
+					
+					if(mes >= 0 && mes < 12)
+						mesValido = true;
+					else
+						System.out.println("Mes invalido, digite novamente");
+				}
+				
+				diaValido = false;
+				dia = 0;
+				
+				while(!diaValido)
+				{
+					System.out.println("Entre com o dia do mês");
+					dia = scan.nextInt();
+					dia--;
+					
+					if(dia >= 0 && dia < 31)
+						diaValido = true;
+					else
+						System.out.println("Dia invalido, digite novamente");
+				}
+				
+				horaValida = false;
+				hora = 0;
+				
+				while(!horaValida)
+				{
+					System.out.println("Entre com a hora do compromisso (8h - 16h)");
+					hora = scan.nextInt();
+					hora -= 8;
+					
+					if(hora >= 0 && hora < 8)
+						horaValida = true;
+					else
+						System.out.println("hora invalida, digite novamente");
+				}
+				
+				System.out.println("O compromisso agendado no dia " + (dia + 1) + " as " + (hora + 8) + "horas eh: " + compromissos[mes][dia][hora]);
+			break;
+			
+			default:
+				System.out.println("Opcao invalida, digite novamente");
+			break;
+			}
+		}
+		
+		scan.close();
+	}
+
+}

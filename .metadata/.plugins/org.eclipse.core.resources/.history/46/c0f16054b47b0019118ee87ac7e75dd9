@@ -1,0 +1,13 @@
+package cursojava.exercicios.lista5;
+
+public class Exercicio6 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int[][] tabuleiro = new int[3][3];
+		
+		
+	}
+
+}
