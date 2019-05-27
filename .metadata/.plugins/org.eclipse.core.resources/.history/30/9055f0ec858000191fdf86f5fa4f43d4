@@ -1,0 +1,10 @@
+package cursojava.aulas.aula13;
+
+public class Debug {
+
+	public static void main(String[] args) {
+		
+		int[] notas = new int[10];
+	}
+
+}
