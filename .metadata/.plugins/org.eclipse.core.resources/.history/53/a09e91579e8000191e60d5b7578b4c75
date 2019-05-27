@@ -1,0 +1,38 @@
+package cursojava.exercicios.lista7;
+
+public class ContaCorrente {
+	
+	int numeroConta;
+	double saldo;
+	boolean especial;
+	int limite;
+	
+	void realizaSaque(double valor) {
+		
+		if(valor > saldo)
+		{
+			System.out.println("Voce nao tem saldo para realizar o saque");
+			return;
+		}
+		
+		saldo -= valor;
+	}
+	
+	void depositaDinheiro(double valor) {
+		saldo += valor;
+	}
+	
+	void consultaSaldo() {
+		System.out.println("Seu saldo eh: " + saldo);
+	}
+	
+	void verificaEstado() {
+		if(especial)
+		{
+			System.out.println("O cliente esta no cheque especial");
+			return;
+		}
+		
+		System.out.println("O cliente nao esta no cheque especial");
+	}
+}

@@ -1,0 +1,39 @@
+package cursojava.exercicios.lista7;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		Aluno aluno = new Aluno();
+		
+		System.out.println("Insira as informacoes do aluno abaixo");
+		System.out.print("Nome: ");
+		aluno.nome = scan.nextLine();
+		System.out.print("Matricula: ");
+		aluno.matricula = scan.nextInt();
+		System.out.print("Curso: ");
+		aluno.curso = scan.nextLine();
+		
+		aluno.disciplinas = new String[3];
+		aluno.notas = new double[3];
+		
+		for(int i = 0; i < aluno.disciplinas.length; i++)
+		{
+			System.out.print("Insira o nome da disciplina: ");
+			aluno.disciplinas[i] = scan.nextLine();
+			System.out.print("Insira a nota nessa disciplina: ");
+			aluno.notas[i] = scan.nextDouble();
+		}
+		
+		for(int i = 0; i < aluno.notas.length; i++)
+			System.out.println("O aluno foi " + aluno.verificaAprovacao(aluno.notas[i]) + " na disciplina de " + aluno.disciplinas[i]);
+		
+		aluno.verificaAprovacao(aluno.notas[0]);
+		
+		scan.close();
+	}
+
+}

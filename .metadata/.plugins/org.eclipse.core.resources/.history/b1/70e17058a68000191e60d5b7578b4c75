@@ -1,0 +1,19 @@
+package cursojava.exercicios.lista7;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+
+		JogoDaVelha jogo = new JogoDaVelha();
+		Scanner scan = new Scanner(System.in);
+		
+		jogo.tabuleiro = new byte[3][3];
+		jogo.vitoria = false;
+		
+	
+		scan.close();
+	}
+
+}

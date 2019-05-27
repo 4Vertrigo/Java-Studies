@@ -1,0 +1,14 @@
+package cursojava.exercicios.lista7;
+
+public class JogoDaVelha {
+
+	byte tabuleiro[][];
+	boolean vitoria;
+	
+	
+	void realizaJogada(String jogador, int x, int y) {
+		System.out.println("Escolha a posicao que voce jogara" + jogador);
+	}
+	
+	
+}

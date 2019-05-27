@@ -1,0 +1,23 @@
+package cursojava.exercicios.lista7;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+
+		JogoDaVelha jogo = new JogoDaVelha();
+		Scanner scan = new Scanner(System.in);
+		
+		jogo.tabuleiro = new byte[3][3];
+		jogo.vitoria = false;
+		
+		System.out.println("Bem vindo ao jogo da velha!");
+		System.out.println("Jogador 1 - X");
+		System.out.println("Jogador 2 - O");
+		
+	
+		scan.close();
+	}
+
+}

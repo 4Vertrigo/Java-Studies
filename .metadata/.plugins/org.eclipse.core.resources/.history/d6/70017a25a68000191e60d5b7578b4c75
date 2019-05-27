@@ -1,0 +1,8 @@
+package cursojava.exercicios.lista7;
+
+public class JogoDaVelha {
+
+	byte tabuleiro[][];
+	
+	
+}

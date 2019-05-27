@@ -3,7 +3,6 @@ package cursojava.aulas.aula15;
 public class TesteCarro {
 
 	public static void main(String[] args) {
-
 		Carro van = new Carro();
 		van.marca = "Fiat";
 		van.modelo = "Ducato";
@@ -23,6 +22,19 @@ public class TesteCarro {
 		
 		System.out.println(fusca.marca);
 		System.out.println(fusca.modelo);
+		
+		van.exibirAutonomia();
+		fusca.exibirAutonomia();
+		
+		double autonomia = van.obterAutonomia();
+		System.out.println("A autonomia do carro eh DUCATO" + autonomia);
+		autonomia = fusca.obterAutonomia();
+		System.out.println("A autonomia do carro eh FUSCA" + autonomia);
+		
+		double qtdCombustivel = van.calcularCombustivel(23); //23kms
+		System.out.println("Quantidade combustivel DUCATO: " + qtdCombustivel);
+		qtdCombustivel = fusca.calcularCombustivel(23); //23kms
+		System.out.println("Quantidade combustivel FUSCA: " + qtdCombustivel);
 	}
 
 }

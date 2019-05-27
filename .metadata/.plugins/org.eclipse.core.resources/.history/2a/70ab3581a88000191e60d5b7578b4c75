@@ -1,0 +1,75 @@
+package cursojava.exercicios.lista7;
+
+import java.util.Scanner;
+
+public class JogoDaVelha {
+
+	byte tabuleiro[][];
+	boolean vitoria;
+	
+	
+	void printaTabuleiro(){
+		
+		for(int i = 0; i < tabuleiro.length; i++)
+		{
+			for(int j = 0; j < tabuleiro[i].length; j++)
+			{
+				if(tabuleiro[i][j] != 0) 
+					System.out.print("(" + i + "," + j + ") " + tabuleiro[i][j] + " ");
+				else
+					System.out.print("(" + i + "," + j + ") _ ");
+			}
+			
+			System.out.print("\n");
+		}
+		
+	}
+	
+	int verificaValidade(char coordenada) {
+		
+		boolean valido = false;
+		Scanner scan = new Scanner(System.in);
+		int coordenadaValor = 0;
+		
+		while(!valido)
+		{
+			System.out.print(coordenada + ": ");
+			coordenadaValor = scan.nextInt();
+			
+			if(coordenadaValor >= 0 && coordenadaValor <= 2)
+				valido = true;
+			else
+				System.out.println(coordenada + " invalido!");
+		}
+		
+		scan.close();
+		return coordenadaValor;
+	}
+	
+	void realizaJogada(String jogador) {
+		
+		boolean jogadaValida = false;
+		
+		System.out.println("Escolha a posicao que voce jogara" + jogador);
+		
+		while(!jogadaValida)
+		{
+			printaTabuleiro();
+			
+			System.out.println("Insira um X e um Y valido no tabuliero:");
+			verificaValidade('X');
+			verificaValidade('Y');
+			
+			if(tabuleiro[x][y] == null)
+			{
+				tabuleiro[x][y] = "X";
+				jogadaValida = true;
+			}
+			else
+				System.out.println("Jogada invalida, tente novamente!");
+		}
+		
+	}
+	
+	
+}

@@ -1,0 +1,38 @@
+package cursojava.exercicios.lista7;
+
+public class JogoDaVelha {
+
+	byte tabuleiro[][];
+	boolean vitoria;
+	
+	
+	void printaTabuleiro(){
+		
+		for(int i = 0; i < tabuleiro.length; i++)
+		{
+			for(int j = 0; j < tabuleiro[i].length; j++)
+			{
+				if(tabuleiro[i][j] != 0) 
+					System.out.print("(" + i + "," + j + ") " + tabuleiro[i][j] + " ");
+				else
+					System.out.print("(" + i + "," + j + ") _ ");
+			}
+			
+			System.out.print("\n");
+		}
+		
+	}
+	
+	void realizaJogada(String jogador, int x, int y) {
+		
+		boolean jogadaValida = false;
+		
+		System.out.println("Escolha a posicao que voce jogara" + jogador);
+		
+		while(!jogadaValida)
+			printaTabuleiro();
+		
+	}
+	
+	
+}

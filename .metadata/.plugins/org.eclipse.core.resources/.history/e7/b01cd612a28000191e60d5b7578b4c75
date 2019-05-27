@@ -1,0 +1,25 @@
+package cursojava.exercicios.lista7;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		Aluno aluno = new Aluno();
+		
+		System.out.println("Insira as informacoes do aluno abaixo");
+		System.out.print("Nome: ");
+		aluno.nome = scan.nextLine();
+		System.out.print("Matricula: ");
+		aluno.matricula = scan.nextInt();
+		
+		
+		
+		
+		
+		scan.close();
+	}
+
+}

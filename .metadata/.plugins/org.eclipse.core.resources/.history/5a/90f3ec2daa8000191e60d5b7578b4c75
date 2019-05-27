@@ -1,0 +1,29 @@
+package cursojava.exercicios.lista7;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+
+		JogoDaVelha jogo = new JogoDaVelha();
+		
+		jogo.tabuleiro = new char[3][3];
+		jogo.vitoria = false;
+		jogo.vez = 0;
+		
+		System.out.println("Bem vindo ao jogo da velha!");
+		System.out.println("Jogador 1 - X");
+		System.out.println("Jogador 2 - O");
+		
+		jogo.preencheTabuleiro();
+		
+		while(!jogo.vitoria)
+		{
+			if(jogo.vez % 2 == 0)
+				
+			
+		}
+		
+	
+	}
+
+}
