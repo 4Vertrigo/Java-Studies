@@ -1,0 +1,14 @@
+package cursojava.exercicios.lista9;
+
+public class Exercicio5 {
+
+	public static void main(String[] args) {
+
+		System.out.println(ConversorTempo.galaoAmericanoParaLitros(1));
+		System.out.println(ConversorTempo.galaoAmericanoParaPolegadasCubicas(1));
+		System.out.println(ConversorTempo.litroParaCentimetrosCubicos(1));
+		System.out.println(ConversorTempo.metroCubicoParaLitros(1));
+		System.out.println(ConversorTempo.metroCubicoParaPesCubicos(1));
+	}
+
+}

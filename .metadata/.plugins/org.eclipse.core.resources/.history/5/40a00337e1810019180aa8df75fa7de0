@@ -1,0 +1,9 @@
+package cursojava.exercicios.lista9;
+
+public class Contador {
+	
+	static int contador;
+	
+	
+
+}

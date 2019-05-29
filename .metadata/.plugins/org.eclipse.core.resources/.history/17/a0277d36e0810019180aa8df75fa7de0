@@ -1,0 +1,8 @@
+package cursojava.exercicios.lista9;
+
+public class Contador {
+	
+	private contador;
+	
+
+}

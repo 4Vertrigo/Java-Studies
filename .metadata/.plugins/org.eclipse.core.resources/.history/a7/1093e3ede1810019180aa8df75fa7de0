@@ -1,0 +1,12 @@
+package cursojava.exercicios.lista9;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+
+		System.out.println(Contador.retorna());
+		System.out.println(Contador.incrementar());
+		
+	}
+
+}

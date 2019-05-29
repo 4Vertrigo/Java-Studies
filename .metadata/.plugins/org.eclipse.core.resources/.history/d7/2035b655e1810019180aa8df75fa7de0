@@ -1,0 +1,17 @@
+package cursojava.exercicios.lista9;
+
+public class Contador {
+	
+	private static int contador;
+	
+	Contador(){
+		contador++;
+	}
+	
+	public static void incrementar() {
+		contador++;
+	}
+	
+	
+
+}
