@@ -27,7 +27,6 @@ public class JogoDaVelha {
 			
 			System.out.println();
 		}
-		
 	}
 	
 	int verificaValidade(char coordenada, Scanner scan) {

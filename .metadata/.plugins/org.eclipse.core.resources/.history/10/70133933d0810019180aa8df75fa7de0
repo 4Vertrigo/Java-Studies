@@ -1,0 +1,24 @@
+package cursojava.exercicios.lista8;
+
+public class Aluno {
+	
+	private String nome;
+	private String curso;
+	private String[] disciplinas;
+	private double[] notas;
+	private int matricula;
+
+	public Aluno() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Aluno(String nome, String curso, String[] disciplinas, double[] notas, int matricula) {
+		this.nome = nome;
+		this.curso = curso;
+		this.disciplinas = disciplinas;
+		this.notas = notas;
+		this.matricula = matricula;
+	}
+	
+	
+}

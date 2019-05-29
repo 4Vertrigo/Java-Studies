@@ -1,0 +1,10 @@
+package cursojava.exercicios.lista8;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+
+		ContaCorrente conta = new ContaCorrente(1234567, 1600.0, true, 800);
+	}
+
+}

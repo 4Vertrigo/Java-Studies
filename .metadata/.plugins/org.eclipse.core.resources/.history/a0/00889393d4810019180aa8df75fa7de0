@@ -1,0 +1,135 @@
+package cursojava.exercicios.lista8;
+
+import java.util.Scanner;
+
+public class JogoDaVelha {
+	
+	private char tabuleiro[][];
+	private boolean vitoria;
+	private int vez;
+	
+	public JogoDaVelha() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public JogoDaVelha(char[][] tabuleiro, boolean vitoria, int vez) {
+		this.tabuleiro = tabuleiro;
+		this.vitoria = vitoria;
+		this.vez = vez;
+	}
+
+	public char[][] getTabuleiro() {
+		return tabuleiro;
+	}
+
+	public void setTabuleiro(char[][] tabuleiro) {
+		this.tabuleiro = tabuleiro;
+	}
+
+	public boolean isVitoria() {
+		return vitoria;
+	}
+
+	public void setVitoria(boolean vitoria) {
+		this.vitoria = vitoria;
+	}
+
+	public int getVez() {
+		return vez;
+	}
+
+	public void setVez(int vez) {
+		this.vez = vez;
+	}
+	
+	public void preencheTabuleiro() {
+		
+		for(int i = 0; i < getTabuleiro().length; i++)
+		{
+			for(int j = 0; j < getTabuleiro()[i].length; j++)
+				getTabuleiro()[i][j] = '_';
+		}
+	}
+	
+	private void printaTabuleiro(){
+		
+		for(int i = 0; i < getTabuleiro().length; i++)
+		{
+			for(int j = 0; j < getTabuleiro()[i].length; j++)
+					System.out.print("(" + i + "," + j + ") " + getTabuleiro()[i][j] + " ");
+			
+			System.out.println();
+		}
+	}
+	
+	private int verificaValidade(char coordenada, Scanner scan) {
+		
+		boolean valido = false;
+		int coordenadaValor = -1;
+		
+		while(!valido)
+		{
+			System.out.print(coordenada + ": ");
+			coordenadaValor = scan.nextInt();
+			
+			if(coordenadaValor >= 0 && coordenadaValor <= 2)
+				valido = true;
+			else
+				System.out.println(coordenada + " invalido!");
+		}
+		
+		return coordenadaValor;
+	}
+	
+	private void verificaVitoria(String jogador, char jogada) {
+		
+		if( (getTabuleiro()[0][0] == jogada && getTabuleiro()[1][1] == jogada && getTabuleiro()[2][2] == jogada) ||
+			(getTabuleiro()[0][2] == jogada && getTabuleiro()[1][1] == jogada && getTabuleiro()[2][0] == jogada) ||
+			(getTabuleiro()[0][0] == jogada && getTabuleiro()[0][1] == jogada && getTabuleiro()[0][2] == jogada) ||
+			(getTabuleiro()[1][0] == jogada && getTabuleiro()[1][1] == jogada && getTabuleiro()[1][2] == jogada) ||
+			(getTabuleiro()[2][0] == jogada && getTabuleiro()[2][1] == jogada && getTabuleiro()[2][2] == jogada) ||
+			(getTabuleiro()[0][0] == jogada && getTabuleiro()[1][0] == jogada && getTabuleiro()[2][0] == jogada) ||
+			(getTabuleiro()[0][1] == jogada && getTabuleiro()[1][1] == jogada && getTabuleiro()[2][1] == jogada) ||
+			(getTabuleiro()[0][2] == jogada && getTabuleiro()[1][2] == jogada && getTabuleiro()[2][2] == jogada)
+		  )
+		{
+			setVitoria(true);
+			System.out.println("Vitoria do " + jogador);
+		}
+		
+		else if(vez == 8) //numero maximo de jogadas para preencher o tabuleiro
+		{
+			setVitoria(true);
+			System.out.println("Deu velha!");
+		}
+		
+		printaTabuleiro();
+	}
+	
+	public void realizaJogada(String jogador, char jogada, Scanner scan) {
+		
+		boolean jogadaValida = false;
+		
+		System.out.println("Escolha a posicao que voce jogara " + jogador);
+		
+		while(!jogadaValida)
+		{
+			printaTabuleiro();
+			
+			System.out.println("Insira um X e um Y valido no tabuleiro:");
+			int x = verificaValidade('X', scan);
+			int y = verificaValidade('Y', scan);
+			
+			if(tabuleiro[x][y] == '_')
+			{
+				tabuleiro[x][y] = jogada;
+				jogadaValida = true;
+			}
+			else
+				System.out.println("Jogada invalida, tente novamente!");
+		}
+		
+		verificaVitoria(jogador, jogada);
+	}
+
+}

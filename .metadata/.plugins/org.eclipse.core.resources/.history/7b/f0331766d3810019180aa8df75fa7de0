@@ -1,0 +1,45 @@
+package cursojava.exercicios.lista8;
+
+public class JogoDaVelha {
+	
+	private char tabuleiro[][];
+	private boolean vitoria;
+	private int vez;
+	
+	public JogoDaVelha() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public JogoDaVelha(char[][] tabuleiro, boolean vitoria, int vez) {
+		this.tabuleiro = tabuleiro;
+		this.vitoria = vitoria;
+		this.vez = vez;
+	}
+
+	public char[][] getTabuleiro() {
+		return tabuleiro;
+	}
+
+	public void setTabuleiro(char[][] tabuleiro) {
+		this.tabuleiro = tabuleiro;
+	}
+
+	public boolean isVitoria() {
+		return vitoria;
+	}
+
+	public void setVitoria(boolean vitoria) {
+		this.vitoria = vitoria;
+	}
+
+	public int getVez() {
+		return vez;
+	}
+
+	public void setVez(int vez) {
+		this.vez = vez;
+	}
+	
+	
+
+}
