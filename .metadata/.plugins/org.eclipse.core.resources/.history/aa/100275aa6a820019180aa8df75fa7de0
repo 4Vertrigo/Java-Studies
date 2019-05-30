@@ -1,0 +1,13 @@
+package cursojava.exercicios.lista11;
+
+public class Aluno {
+	
+	private String nome;
+	private int numMatricula;
+	private int[] notas;
+
+	public Aluno() {
+		notas = new int[4];
+		// TODO Auto-generated constructor stub
+	}
+}

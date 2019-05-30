@@ -1,0 +1,27 @@
+package cursojava.exercicios.lista11;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+	public static final int NUMALUNOS = 5;
+	
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Bem vindo ao sistema de cadastro JupiterWeb!");
+		
+		Curso disciplina = new Curso();
+		
+		System.out.println("Insira o nome desta disciplina");
+		disciplina.setNome(scan.nextLine());
+		System.out.println("Insira o horario desta disciplina");
+		disciplina.setHorario(scan.hasNextLine());
+		
+		
+		
+		scan.close();
+		
+	}
+
+}

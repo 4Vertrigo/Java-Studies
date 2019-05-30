@@ -1,0 +1,8 @@
+package cursojava.exercicios.lista11;
+
+public class Professor {
+
+		private String Nome;
+		private String Departamento;
+		private String email;
+}
