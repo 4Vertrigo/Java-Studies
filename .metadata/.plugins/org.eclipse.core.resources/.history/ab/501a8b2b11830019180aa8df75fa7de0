@@ -1,0 +1,10 @@
+package cursojava.exercicios.lista12.exercicio3;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		Animal camelo = new Mamifero("Camelo", 150.0, 4, "Amarelo", "Terra", 2.0, "Areia");
+	}
+
+}

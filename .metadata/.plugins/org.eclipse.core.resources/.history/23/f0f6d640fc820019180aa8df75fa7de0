@@ -1,0 +1,16 @@
+package cursojava.exercicios.lista12.exercicio1;
+
+public class ContaPoupanca extends ContaBancaria{
+	
+	private int diaRendimento;
+	
+	public ContaPoupanca() {
+		super();
+	}
+	
+	public ContaPoupanca(String nomeCliente, int numConta, double saldo, int diaRendimento) {
+		super(nomeCliente, numConta, saldo);
+		this.diaRendimento = diaRendimento;
+	}
+
+}

@@ -1,0 +1,18 @@
+package cursojava.exercicios.lista12.exercicio1;
+
+public class ContaEspecial extends ContaBancaria{
+	
+	private double limite;
+	
+	public ContaEspecial() {
+		super();
+	}
+	
+	public ContaEspecial(String nomeCliente, int numConta, double saldo, double limite) {
+		super(nomeCliente, numConta, saldo);
+		this.limite = limite;
+	}
+	
+	
+
+}

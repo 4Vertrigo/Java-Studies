@@ -1,0 +1,9 @@
+package cursojava.exercicios.lista12.exercicio1;
+
+public class ContaEspecial extends ContaBancaria{
+	
+	private double limite;
+	
+	
+
+}

@@ -1,0 +1,10 @@
+package cursojava.exercicios.lista12.exercicio1;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		ContaBancaria contaSimples = new ContaBancaria();
+	}
+
+}

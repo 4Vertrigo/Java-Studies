@@ -1,0 +1,5 @@
+package cursojava.exercicios.lista12.exercicio3;
+
+public class Peixe extends Animal{
+
+}

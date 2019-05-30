@@ -1,0 +1,11 @@
+package cursojava.exercicios.lista12.exercicio3;
+
+public class Animal {
+	
+	private String nome;
+	private double comprimento;
+	private int patas;
+	private String cor;
+	private String ambiente;
+	double velocidade;
+}

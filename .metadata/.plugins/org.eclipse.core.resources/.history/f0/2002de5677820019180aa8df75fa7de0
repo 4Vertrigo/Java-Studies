@@ -1,0 +1,10 @@
+package cursojava.aulas.aula19;
+
+public class Heranca extends Pessoa{
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package cursojava.exercicios.lista12.exercicio2;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		Contribuente jonas = new PessoaFisica("Jonas Wendel", );
+		Contribuente joao = new PessoaFisica();
+		Contribuente vantuil = new PessoaFisica();
+		Contribuente empresa1 = new PessoaJuridica();
+		Contribuente empresa2 = new PessoaJuridica();
+		Contribuente empresa3 = new PessoaJuridica();
+		
+	}
+
+}

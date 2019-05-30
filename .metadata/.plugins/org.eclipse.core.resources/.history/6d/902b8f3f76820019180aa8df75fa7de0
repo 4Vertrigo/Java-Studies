@@ -1,0 +1,12 @@
+package cursojava.aulas.aula19;
+
+public class Aluno {
+	
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String cpf;
+	private String curso;
+	private double[] notas;
+
+}

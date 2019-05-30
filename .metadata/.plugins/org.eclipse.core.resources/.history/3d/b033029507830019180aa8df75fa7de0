@@ -1,0 +1,7 @@
+package cursojava.exercicios.lista12.exercicio2;
+
+public class ImpostoDeRenda {
+
+	private String nome;
+	private double rendaBruta;
+}

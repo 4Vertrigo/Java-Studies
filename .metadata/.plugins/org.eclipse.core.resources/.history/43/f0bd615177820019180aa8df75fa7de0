@@ -1,0 +1,10 @@
+package cursojava.aulas.aula19;
+
+public class Heranca {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
