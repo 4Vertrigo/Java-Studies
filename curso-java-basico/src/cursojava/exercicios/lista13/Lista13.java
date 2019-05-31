@@ -23,14 +23,14 @@ public class Lista13 {
 				aux2D = (Figura2D) figura; //downcasting
 				
 				System.out.println(aux2D.getNome());
-				System.out.println("Area : " + aux2D.calcularArea());
+				System.out.println("Area : " + aux2D.calcularArea() + "cm2");
 			}
 			else if(figura instanceof Figura3D)
 			{
 				aux3D = (Figura3D) figura;
 				System.out.println(aux3D.getNome());
-				System.out.println("Area: " + aux3D.calcularArea());
-				System.out.println("Volume: "+ aux3D.calcularVolume());
+				System.out.println("Area: " + aux3D.calcularArea() + "cm2");
+				System.out.println("Volume: "+ aux3D.calcularVolume() + "cm3");
 			}
 			
 			System.out.println("---------------------------------------");

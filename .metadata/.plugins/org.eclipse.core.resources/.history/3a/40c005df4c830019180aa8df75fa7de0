@@ -1,0 +1,15 @@
+package cursojava.exercicios.lista14;
+
+public class Contato {
+	
+	public static int contador;
+	
+	private String nome;
+	private String telefone;
+	private int identificador;
+	
+	
+	
+	
+
+}

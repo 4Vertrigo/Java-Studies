@@ -1,0 +1,17 @@
+package cursojava.aulas.aula24;
+
+public class Execao {
+
+	public static void main(String[] args) {
+
+		int[] vetir = new int[4];
+		
+		System.out.println("Antes da excption");
+		
+		vetor[4] = 1;
+		
+		System.out.println("Esse texto nao sera impresso");
+		
+	}
+
+}

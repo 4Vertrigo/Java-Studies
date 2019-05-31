@@ -1,0 +1,7 @@
+package cursojava.exercicios.lista14;
+
+public class Agenda {
+	
+	private Contato[] contatos;
+
+}

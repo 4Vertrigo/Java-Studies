@@ -1,0 +1,32 @@
+package cursojava.exercicios.lista14;
+
+public class Agenda {
+	
+	private Contato[] contatos;
+
+	public Agenda() {
+		
+	}
+	
+	public Agenda(Contato[] contatos) {
+		this.contatos = contatos;
+	}
+
+	public Contato[] getContatos() {
+		return contatos;
+	}
+
+	public void setContatos(Contato[] contatos) {
+		this.contatos = contatos;
+	}
+	
+	public void adicionaContato(Contato contato) {
+		
+		this.contato[this.contato.getContato()] = new Contato();
+	}
+	
+	
+	
+	
+
+}

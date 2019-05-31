@@ -1,0 +1,36 @@
+package cursojava.exercicios.lista14;
+
+public class Contato {
+	
+	private int contador = 0;
+
+	private String nome;
+	private String telefone;
+	private int identificador;
+	
+	public Contato() {
+		contador++;
+		id = contador;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public int getIdentificador() {
+		return identificador;
+	}
+	
+	
+	
+	
+
+}

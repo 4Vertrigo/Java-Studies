@@ -1,0 +1,18 @@
+package cursojava.aulas.aula24;
+
+import java.util.Scanner;
+
+public class UsandoThrows {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+	public double leNumero() {
+		Scanner scan = new Scanner(System.in);
+		double num = scan.nextDouble();
+		scan.close();
+		return num;
+	}
+}
