@@ -1,0 +1,13 @@
+package cursojava.exercicios.lista13.exercicio1;
+
+public class Circulo extends Figura2D {
+
+	private double raio;
+	
+	@Override
+	public int calcularArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

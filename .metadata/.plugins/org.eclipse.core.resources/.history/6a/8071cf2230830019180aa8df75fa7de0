@@ -1,0 +1,15 @@
+package cursojava.exercicios.lista13.exercicio1;
+
+public class Piramide extends Figura3D {
+
+	private double altura;
+	private double arestaBase;
+	private double apotemaLateral;
+	
+	@Override
+	public double DimensaoVolumetrica() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

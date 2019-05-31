@@ -1,0 +1,7 @@
+package cursojava.aulas.aula21;
+
+public class Mamifero {
+	
+	public abstract void amamentar();
+
+}

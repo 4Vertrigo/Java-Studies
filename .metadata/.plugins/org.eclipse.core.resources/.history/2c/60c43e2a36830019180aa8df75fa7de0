@@ -1,0 +1,11 @@
+package cursojava.exercicios.lista13.exercicio1;
+
+public class Lista13 {
+	
+	public static void main(String[] args) {
+		
+		Quadrado quadrado = new Quadrado(5.0);
+		Triangulo triangulo = new Triangulo(5.0, 5.0);
+	}
+
+}

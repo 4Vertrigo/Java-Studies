@@ -1,0 +1,11 @@
+package cursojava.aulas.aula21;
+
+public class Papagaio extends Ave{
+
+
+	@Override
+	public void emitirSom() {
+		// TODO Auto-generated method stub
+		
+	}
+}

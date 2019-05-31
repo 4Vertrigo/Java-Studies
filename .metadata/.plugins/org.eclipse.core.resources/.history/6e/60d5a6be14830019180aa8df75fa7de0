@@ -1,0 +1,8 @@
+package cursojava.aulas.aula21;
+
+public interface class AnimalDomesticado {
+	
+	public abstract void levarVeterinario();
+	public abstract void alimentar();
+
+}

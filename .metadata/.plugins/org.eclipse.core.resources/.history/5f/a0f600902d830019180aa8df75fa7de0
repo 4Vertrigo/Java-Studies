@@ -1,0 +1,25 @@
+package cursojava.exercicios.lista13.exercicio1;
+
+public class Circulo extends Figura2D {
+
+	private double raio;
+	
+	public Circulo() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public double getRaio() {
+		return raio;
+	}
+
+	public void setRaio(double raio) {
+		this.raio = raio;
+	}
+
+	@Override
+	public double calcularArea() {
+		return Math.PI * Math.pow(getRaio, 2);
+	}
+
+}

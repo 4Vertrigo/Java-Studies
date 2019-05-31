@@ -1,0 +1,37 @@
+package cursojava.exercicios.lista13.exercicio1;
+
+public class Lista13 {
+	
+	public static void main(String[] args) {
+		
+		FiguraGeometrica[] figuras = new FiguraGeometrica[6];
+		
+		figuras[0] = new Quadrado(5.0); 
+		figuras[1] = new Triangulo(5.0, 5.0);
+		figuras[2] = new Circulo(5.0);
+		figuras[3] = new Cubo(5.0);
+		figuras[4] = new Cilindro(5.0, 5.0);
+		figuras[5] = new Piramide(5.0, 5.0, 5.0, (Figura2D) figuras[0], 5);
+		
+		Figura2D aux2D;
+		Figura3D aux3D;
+		
+		for(FiguraGeometrica figura : figuras)
+		{
+			if(figura instanceof Figura2D)
+			{
+				aux2D = (Figura2D) figura; //downcasting
+				
+				System.out.println(aux2D.calcularArea());
+			}
+			else if(figura instanceof Figura3D)
+			{
+				aux3D = (Figura3D) figura;
+				System.out.println(aux3D.calcularArea());
+				System.out.println(aux3D.dimensaoVolumetrica());
+			}
+		}
+		
+	}
+
+}

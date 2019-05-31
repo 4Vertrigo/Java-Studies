@@ -1,0 +1,7 @@
+package cursojava.exercicios.lista13.exercicio1;
+
+public abstract class FiguraGeometrica {
+	
+	private String nome;
+	private 
+}

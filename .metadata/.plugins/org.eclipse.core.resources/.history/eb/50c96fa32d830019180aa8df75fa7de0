@@ -1,0 +1,11 @@
+package cursojava.exercicios.lista13.exercicio1;
+
+public class Quadrado extends Figura2D {
+
+	@Override
+	public int calcularArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

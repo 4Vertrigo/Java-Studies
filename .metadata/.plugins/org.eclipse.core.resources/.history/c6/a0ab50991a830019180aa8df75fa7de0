@@ -1,0 +1,8 @@
+package cursojava.aulas.aula23;
+
+public interface BancoDados {
+	
+	void abrirConexao();
+	void fecharConexao();
+
+}
