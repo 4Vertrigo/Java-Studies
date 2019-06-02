@@ -2,5 +2,34 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Types.MostSpecificReturnCheck"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista8.ContaCorrente"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula16.MinhaCalculadora"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista9.ConversorVolumes"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista10.Fibonacci"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista10.Somatorio"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula20.Aluno"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista12.exercicio1.ContaBancaria"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista12.exercicio2.Contribuente"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula21.Ave"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula21.AnimalDomesticado"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula21.AnimalEstimacao"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula23.SqlDCL"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula23.SqkDDK"/>
+    <fullyQualifiedTypeName name="cursojava.aulas.aula23.SqlDML"/>
+    <fullyQualifiedTypeName name="java.awt.image.BandCombineOp"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista13.exercicio1.FiguraGeometrica"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista13.exercicio1.DimensaoSuperficial"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista13.exercicio1.DimensaoVolume"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista14.AgendaCheiaException"/>
+    <fullyQualifiedTypeName name="cursojava.exercicios.lista14.ContatoNaoExisteException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,12 @@
+package courseADTs.ADTs.vetor;
+
+public class ArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList vector = new ArrayList();
+		
+		vector.add("A");
+	}
+
+}

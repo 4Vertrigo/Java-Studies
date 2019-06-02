@@ -1,0 +1,36 @@
+package courseADTs.ADTs.vetor;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Vector vector = new Vector(5);
+		
+		try
+		{
+			vector.add("Hello");
+			vector.add("World");
+		} 
+		
+		catch (Exception e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println(vector.length());
+		System.out.println(vector);
+		
+		try
+		{
+			String aux = vector.search(1);
+		}
+		
+		catch (Exception e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

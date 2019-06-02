@@ -1,0 +1,42 @@
+package courseADTs.ADTs.vetor;
+
+public class MainObjects {
+	
+	public static void main(String[] args) {
+		
+		VectorObject vector = new VectorObject();
+		
+		vector.add(3);
+		vector.add(4);
+		vector.add(5);
+		vector.add("Jonas");
+		
+		Contato c1 = new Contato("Contato1", "1234-4567", "contato1@email.com");
+		Contato c2 = new Contato("Contato2", "2345-4567", "contato2@email.com");
+		Contato c3 = new Contato("Contato1", "3456-4567", "contato3@email.com");
+		
+		vector.add(c1);
+		vector.add(c2);
+		vector.add(c3);
+		
+		System.out.println(vector.length());
+		System.out.println(vector);
+		
+		try {
+			vector.remove(0);	
+		} catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+		System.out.println(vector);
+		
+		try {
+			int pos = vector.search(c1);
+		} catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+	}
+	
+
+}

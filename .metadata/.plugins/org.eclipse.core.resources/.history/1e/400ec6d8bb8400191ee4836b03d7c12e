@@ -1,0 +1,18 @@
+package courseADTs.ADTs.vetor;
+
+public class MainList {
+
+	public static void main(String[] args) {
+
+		List<String> vector = new List<String>();
+		
+		vector.add("Jonas");
+		
+		System.out.println(vector);
+		System.out.println(vector.search(0));
+		
+		List<Contact> vector2 = new List<Contact>();
+		
+	}
+
+}

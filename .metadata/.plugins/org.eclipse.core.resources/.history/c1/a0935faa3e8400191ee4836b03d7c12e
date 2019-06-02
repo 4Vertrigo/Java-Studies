@@ -1,0 +1,7 @@
+package courseADTs.ADTs.vetor;
+
+public class MainObjects {
+	
+	VectorObject vector = new VectorObjects();
+
+}

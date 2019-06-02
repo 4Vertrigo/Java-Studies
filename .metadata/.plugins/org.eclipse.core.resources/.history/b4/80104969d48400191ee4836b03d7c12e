@@ -1,0 +1,46 @@
+package courseADTs.vector.exercises.exercise1;
+
+import java.util.ArrayList;
+
+import courseADTs.vector.Contact;
+
+public class MainArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Contact> vector = new ArrayList<Contact>();
+		
+		Contact c;
+		StringBuilder name = new StringBuilder();
+		StringBuilder phone = new StringBuilder();
+		StringBuilder email = new StringBuilder();
+		
+		for(int i = 0; i < 30; i++)
+		{
+			name.append("Contato");
+			name.append(i);
+			
+			phone.append(i);
+			phone.append("2345-6789");
+			
+			email.append("contato");
+			email.append(i);
+			email.append("@usp.br");
+			
+			c = new Contact(name.toString(), phone.toString(), email.toString());
+			vector.add(c);
+			
+			name.setLength(0);
+			phone.setLength(0);
+			email.setLength(0);
+		}
+		
+		Contact c1 = new Contact("Contact", "234-4567", "Contact@email.com");
+		
+		System.out.println(vector);
+		
+		
+
+	}
+
+}

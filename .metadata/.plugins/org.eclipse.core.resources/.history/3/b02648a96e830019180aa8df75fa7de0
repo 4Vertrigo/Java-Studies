@@ -1,0 +1,32 @@
+package courseADTs.ADTs.vetor;
+
+public class Vector {
+	
+	private String[] elements;
+	private int realSize;
+
+	public Vector(int size) {
+		this.elements = new String[size];
+		this.realSize = 0;
+	}
+	
+	//inefficient method
+	/*public void add(String element) {
+		
+		for(int i = 0; i < this.elements.length; i++)
+		{
+			if(this.elements[i] == null)
+			{
+				this.elements[i] = element;
+				break;
+			}
+		}
+	}*/
+	
+	public void add(String element) {
+	
+		this.elements[this.realSize] = element;
+		this.realSize++;
+	}
+
+}

@@ -1,0 +1,13 @@
+package courseADTs.ADTs.vetor;
+
+public class Vector {
+	
+	private String[] elements;
+
+	public Vector(int size) {
+		this.elements = new String[size];
+	}
+	
+	
+
+}

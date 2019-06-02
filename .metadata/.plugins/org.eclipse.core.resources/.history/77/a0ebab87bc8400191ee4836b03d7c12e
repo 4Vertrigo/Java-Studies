@@ -1,0 +1,10 @@
+package courseADTs.ADTs.vetor;
+
+public class ArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList<int> = new ArrayList<int>(5);
+	}
+
+}

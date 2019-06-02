@@ -1,0 +1,10 @@
+package courseADTs.ADTs.vetor;
+
+public class MainObjects {
+	
+	Vector vector = new Vector(0);
+	
+	vector.add("A");
+	
+
+}

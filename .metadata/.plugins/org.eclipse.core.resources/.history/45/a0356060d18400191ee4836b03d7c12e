@@ -1,0 +1,11 @@
+package courseADTs.vector.exercises.exercise1;
+
+public class MainArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> vector = new ArrayList<Integer>();
+
+	}
+
+}

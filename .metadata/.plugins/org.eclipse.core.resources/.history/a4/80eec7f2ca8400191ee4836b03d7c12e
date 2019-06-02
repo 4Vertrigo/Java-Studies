@@ -1,0 +1,45 @@
+package courseADTs.vector.exercises.exercise1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		List<Integer> vector = new List<Integer>();
+		
+		vector.add(1);
+		vector.add(2);
+		vector.add(3);
+		vector.add(1);
+		
+		exists(vector, 1);
+		exists(vector, 0);
+		
+		System.out.println(vector.lastIndexOf(1));
+		System.out.println(vector.lastIndexOf(4));
+		
+		vector.remove((Integer) 3);
+		
+		System.out.println(vector);
+		
+		try {
+			System.out.println(vector.get(2));
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		vector.clear();
+		
+		System.out.println(vector + 1);
+	}
+	
+	public static void exists(List<Integer> vector, Integer element)
+	{
+		if(vector.contains(element))
+			System.out.println("Element exists in array");
+		else
+			System.out.println("Element doesn't exist in array");
+	}
+	
+	
+
+}

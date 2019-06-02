@@ -1,0 +1,18 @@
+package courseADTs.ADTs.vetor;
+
+public class MainObjects {
+	
+	public static void main(String[] args) {
+		
+		VectorObject vector = new VectorObject();
+		
+		vector.add(3);
+		vector.add(4);
+		vector.add(5);
+		
+		System.out.println(vector.length());
+		System.out.println(vector);
+	}
+	
+
+}

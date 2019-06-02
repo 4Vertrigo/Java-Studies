@@ -1,3 +1,2 @@
 INDEX VERSION 1.131+/home/vertrigo/Java-Studies/.metadata/.plugins/org.eclipse.jdt.core
-794308934.index
 2390367922.index
