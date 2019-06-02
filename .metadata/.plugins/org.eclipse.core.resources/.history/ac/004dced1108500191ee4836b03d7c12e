@@ -1,0 +1,49 @@
+package courseADTs.stack.exercises;
+
+import java.util.Stack;
+
+public class Exercise8 {
+
+	public static void main(String[] args) {
+
+		Stack<Integer> origin = new Stack<>();
+		Stack<Integer> dest = new Stack<>();
+		Stack<Integer> aux = new Stack<>();
+		
+		origin.push(3);
+		origin.push(2);
+		origin.push(1);
+		
+		hanoiTower(origin, dest, aux);
+		
+		System.out.println(origin);
+		System.out.println(dest);
+		System.out.println(aux);
+	}
+	
+	public static void hanoiTower(Stack<Integer> origin, Stack<Integer> dest, Stack<Integer> aux) {
+		
+		origin.pop();
+		dest.push(1);
+		
+		origin.pop();
+		aux.push(2);
+		
+		dest.pop();
+		aux.push(1);
+		
+		origin.pop();
+		dest.push(3);
+		
+		aux.pop();
+		origin.push(1);
+		
+		aux.pop();
+		dest.push(2);
+		
+		origin.pop();
+		dest.push(1);
+
+	}
+
+}

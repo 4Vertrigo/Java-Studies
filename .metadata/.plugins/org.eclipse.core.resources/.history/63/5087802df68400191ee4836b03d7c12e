@@ -1,0 +1,16 @@
+package courseADTs.stack.exercises;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		Stack<Integer> stack = new Stack<Integer>();
+		
+		
+	}
+
+}

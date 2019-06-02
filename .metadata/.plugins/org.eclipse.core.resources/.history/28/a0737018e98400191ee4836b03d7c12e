@@ -1,0 +1,22 @@
+package courseADTs.base;
+
+public class StaticStruct<T> {
+	
+	private T[] elements;
+	private int size;
+	
+	public StaticStruct(int capacity) {
+		
+		elements = (T[]) new Object[capacity];
+		size = 0;
+	}
+	
+	public StaticStruct() {
+		this(10);
+	}
+	
+	public int size() {
+		return this.size;
+	}
+
+}

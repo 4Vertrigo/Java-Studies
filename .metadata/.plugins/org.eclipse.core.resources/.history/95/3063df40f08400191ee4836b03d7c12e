@@ -1,0 +1,20 @@
+package courseADTs.stack;
+
+import courseADTs.base.StaticStruct;
+
+public class Stack<T> extends StaticStruct<T> {
+
+	public Stack() {
+		super();
+	}
+	
+	public Stack(int capacity) {
+		super(capacity);
+	}
+	
+	public void push(T element) {
+		this.increaseCapacity();
+		
+		this.elements[super.size++] = element;
+	}
+}

@@ -1,0 +1,25 @@
+package courseADTs.stack.exercises;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Exercise5 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		Stack<Character> stack1 = new Stack<Character>();
+		Stack<Character> stack2 = new Stack<Character>();
+		
+		String palindrome = scan.nextLine();
+		
+		for(int i = 0; i < palindrome.length(); i++)
+		{
+			stack1.push(palindrome.charAt(i));
+			
+		}
+		
+		
+	}
+
+}

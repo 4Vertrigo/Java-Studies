@@ -1,0 +1,12 @@
+package courseADTs.stack.exercises.exercises3;
+
+import courseADTs.stack.MyStack;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+
+		MyStack<Book> stack = new MyStack<Book>(20);
+	}
+
+}

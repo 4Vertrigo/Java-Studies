@@ -1,0 +1,20 @@
+package courseADTs.stack;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Stack<Integer> stack = new Stack<Integer>();
+		
+		System.out.println(stack);
+		System.out.println(stack.size());
+		
+		for(int i = 1; i <= 10; i++)
+			stack.push(i);
+		
+		System.out.println(stack);
+		System.out.println(stack.size());
+		System.out.println(stack.top());
+	}
+
+}

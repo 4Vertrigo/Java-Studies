@@ -1,0 +1,27 @@
+package courseADTs.stack.exercises;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+import javax.xml.stream.events.Characters;
+
+public class Exercise {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		boolean expRight = true;
+		Stack<Characters> stack = new Stack<Characters>();
+		
+		String expression = scan.nextLine();
+		
+		for(int i = 0; i < expression.length(); i++)
+		{
+	
+				stack.push(expression.charAt(i))
+		}
+		
+		
+	}
+
+}

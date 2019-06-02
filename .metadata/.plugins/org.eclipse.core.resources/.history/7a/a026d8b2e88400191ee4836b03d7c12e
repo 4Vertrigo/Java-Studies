@@ -1,0 +1,5 @@
+package courseADTs.base;
+
+public class StaticStruct<T> {
+
+}

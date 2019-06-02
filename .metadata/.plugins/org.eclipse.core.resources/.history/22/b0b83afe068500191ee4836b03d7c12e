@@ -1,0 +1,12 @@
+package courseADTs.stack.exercises;
+
+import java.util.Stack;
+
+public class Exercise5 {
+
+	public static void main(String[] args) {
+
+		Stack<Character> stack1 = new Stack<Character>();
+	}
+
+}

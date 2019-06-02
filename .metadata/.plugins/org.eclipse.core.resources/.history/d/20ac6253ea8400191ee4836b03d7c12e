@@ -1,0 +1,5 @@
+package courseADTs.vector;
+
+public class StaticList {
+
+}

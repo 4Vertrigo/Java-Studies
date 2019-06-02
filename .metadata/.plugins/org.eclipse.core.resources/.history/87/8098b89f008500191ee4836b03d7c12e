@@ -1,0 +1,11 @@
+package courseADTs.stack.exercises.exercises3;
+
+import java.util.Date;
+
+public class Book {
+	
+	private String name;
+	private String isbn;
+	private Date realeseDate;
+
+}

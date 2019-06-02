@@ -1,0 +1,36 @@
+package courseADTs.stack.exercises;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Exercise7 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		Stack<Integer> stack = new Stack<Integer>();
+		
+		System.out.println("Insert a number");
+		int num = scan.nextInt();
+
+		transformsBinary(num, stack);
+		
+		while(!stack.isEmpty())
+			System.out.print(stack.pop());
+		
+		scan.close();
+	}
+	
+	public static void transformsBinary(int num, Stack<Integer> stack) {
+		
+		if(num <= 2)
+		{
+			stack.push(num%2);
+			return;
+		}
+		
+		stack.push(num%2);
+		transformsBinary(num/2, stack);
+	}
+
+}

@@ -1,0 +1,7 @@
+package courseADTs.vector;
+
+import courseADTs.base.StaticStruct;
+
+public class StaticList<T> extends StaticStruct<T> {
+
+}
