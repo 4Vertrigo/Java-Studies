@@ -1,0 +1,25 @@
+package courseADTs.queue.exercises;
+
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Random;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		
+		Queue<Integer> queue = new LinkedList<>();
+		Queue<Integer> priorityQueue = new PriorityQueue<>();
+		
+		int[] key = new int[10];
+		Random randNum = new Random();
+		
+		for(int i = 0; i < 10; i++)
+		{
+			key[i] = randNum.nextInt();
+		}
+
+	}
+
+}

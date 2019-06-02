@@ -25,11 +25,17 @@
     <fullyQualifiedTypeName name="cursojava.exercicios.lista13.exercicio1.DimensaoVolume"/>
     <fullyQualifiedTypeName name="cursojava.exercicios.lista14.AgendaCheiaException"/>
     <fullyQualifiedTypeName name="cursojava.exercicios.lista14.ContatoNaoExisteException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="courseADTs.ADTs.vetor.VectorObject"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="courseADTs.base.StaticStruct"/>
+    <fullyQualifiedTypeName name="courseADTs.vector.StaticList"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

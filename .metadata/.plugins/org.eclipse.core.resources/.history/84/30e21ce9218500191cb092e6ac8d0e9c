@@ -1,0 +1,5 @@
+package courseADTs.queue;
+
+public class PriorityQueue {
+
+}

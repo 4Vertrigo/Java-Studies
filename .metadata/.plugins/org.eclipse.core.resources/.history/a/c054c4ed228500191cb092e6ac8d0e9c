@@ -1,0 +1,11 @@
+package courseADTs.queue;
+
+public class PriorityQueue<T> extends MyQueue<T> {
+	
+	public void enqueue(T element) {
+		
+		Comparable<T> key = (Comparable<T>) element;
+		
+	}
+
+}

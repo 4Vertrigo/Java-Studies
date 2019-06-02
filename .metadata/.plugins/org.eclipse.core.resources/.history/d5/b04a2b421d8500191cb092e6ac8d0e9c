@@ -1,0 +1,7 @@
+package courseADTs.queue;
+
+import courseADTs.base.StaticStruct;
+
+public class MyQueue<T> extends StaticStruct<T>{
+
+}

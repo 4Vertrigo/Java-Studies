@@ -2,6 +2,8 @@ package courseADTs.stack;
 
 import java.util.Stack;
 
+import courseADTs.queue.MyPriorityQueue;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -32,6 +34,7 @@ public class Main {
 		System.out.println(stackAPI.peek());
 		System.out.println(stackAPI.pop());
 		System.out.println(stack);
+		
 	}
 
 }

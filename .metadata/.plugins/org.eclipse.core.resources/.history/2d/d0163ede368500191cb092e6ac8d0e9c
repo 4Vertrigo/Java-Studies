@@ -1,0 +1,14 @@
+package courseADTs.queue.exercises;
+
+import java.util.Queue;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		
+		Queue<Integer> queue = LinkedList<>();
+		
+
+	}
+
+}

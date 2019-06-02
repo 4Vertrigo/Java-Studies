@@ -50,18 +50,33 @@ public class StaticStruct<T> {
 	
 	protected boolean add(int pos, T element) {
 		
-		if(!(pos >= 0 && pos < this.size)) {
-			throw new IllegalArgumentException("Invalid position");
-		}
-		
+		if (pos < 0 || pos > this.size)
+			throw new IllegalArgumentException("Posição inválida");
+
 		this.increaseCapacity();
-		
-		for(int i = this.size - 1; i >= pos; i--)
+
+		//mover todos os elementos
+		for (int i = this.size-1; i >= pos; i--)
 			this.elements[i+1] = this.elements[i];
 		
 		this.elements[pos] = element;
 		this.size++;
+
 		return true;
+	}
+	
+	protected void remove(int pos) {
+		
+		if(pos >= 0 && pos < this.size)
+		{
+			for(int i = pos; i < this.size - 1; i++)
+				this.elements[i] = this.elements[i + 1];
+			
+			this.size--;
+			return;
+		}
+		
+		throw new IllegalArgumentException("Invalid position");
 	}
 	
 	public String toString() {

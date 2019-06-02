@@ -1,0 +1,14 @@
+package courseADTs.queue.exercises.exercise1;
+
+public class Documents {
+	
+	private String name;
+	private int numPages;
+	
+	public Documents() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

@@ -1,0 +1,28 @@
+package courseADTs.queue;
+
+public class PriorityQueue<T> extends MyQueue<T> {
+	
+	public PriorityQueue() {
+		super();
+	}
+	
+	public PriorityQueue(int capacity) {
+		super(capacity);
+	}
+	
+	public void enqueue(T element) {
+		
+		Comparable<T> key = (Comparable<T>) element;
+		
+		int i = 0;
+		
+		for(i = 0; i < this.size; i++)
+			if(key.compareTo(this.elements[i]) < 0)
+				break;
+		if(i > 0)
+			super.add(i, element);
+		else
+			super.add(element);
+	}
+
+}
