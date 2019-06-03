@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="which_is_the_value_in_real">Which is the value in Real?</string>
+    <string name="value_in_dollar">Value in dollar</string>
+    <string name="value_in_euro">Value in euro</string>
+    <string name="calculate">Calculate</string>
+    <string name="insert_value">Insert a value</string>
+</resources>
+

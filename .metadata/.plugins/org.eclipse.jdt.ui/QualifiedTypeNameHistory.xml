@@ -25,7 +25,6 @@
     <fullyQualifiedTypeName name="cursojava.exercicios.lista13.exercicio1.DimensaoVolume"/>
     <fullyQualifiedTypeName name="cursojava.exercicios.lista14.AgendaCheiaException"/>
     <fullyQualifiedTypeName name="cursojava.exercicios.lista14.ContatoNaoExisteException"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
@@ -34,8 +33,16 @@
     <fullyQualifiedTypeName name="courseADTs.ADTs.vetor.VectorObject"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="courseADTs.base.StaticStruct"/>
     <fullyQualifiedTypeName name="courseADTs.vector.StaticList"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="courseADTs.base.StaticStruct"/>
+    <fullyQualifiedTypeName name="courseADTs.queue.PriorityQueue"/>
+    <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="courseADTs.queue.exercises.MyPriorityQueue"/>
+    <fullyQualifiedTypeName name="courseADTs.queue.exercises.exercise1.Documents"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>
