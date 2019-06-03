@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewYear</string>
+    <string name="remaining_days_to_end_of_the_year">Remaining days to end of the year</string>
+    <string name="will_you_to_participate">Will you to participate?</string>
+    <string name="days">days</string>
+    <string name="no_answer">No answer</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+</resources>
