@@ -1,0 +1,14 @@
+package deepeningFundamentals;
+
+public class StringToNumber {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		String anser1 = JOpitionPane.showInputDialog("Which is the first grade");
+		
+
+		
+	}
+
+}

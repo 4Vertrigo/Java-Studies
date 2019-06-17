@@ -1,6 +1,0 @@
-package courseADTs.queue;
-
-public class PriorityQueue<T> extends Queue<T> {
-	
-
-}

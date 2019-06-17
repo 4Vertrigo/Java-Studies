@@ -1,6 +1,0 @@
-package cursojava.aulas.aula23;
-
-
-public class BancoMySQL implements BancoDados{
-
-}

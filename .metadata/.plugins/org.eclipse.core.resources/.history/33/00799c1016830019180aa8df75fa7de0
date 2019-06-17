@@ -1,7 +1,0 @@
-package cursojava.aulas.aula22;
-
-public class Teste {
-	
-	Aluno aluno = new Aluno();
-
-}

@@ -1,8 +1,0 @@
-package cursojava.aulas.aula21;
-
-public class Gato {
-
-	private String raca;
-	
-	
-}

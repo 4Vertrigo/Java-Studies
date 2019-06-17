@@ -1,6 +1,0 @@
-package cursojava.aulas.aula21;
-
-public abstract class Mamifero Extends Animal{
-	
-	public abstract void amamentar();
-}

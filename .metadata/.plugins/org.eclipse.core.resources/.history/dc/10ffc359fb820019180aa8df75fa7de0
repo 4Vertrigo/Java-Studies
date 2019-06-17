@@ -1,9 +1,0 @@
-package cursojava.exercicios.lista12.exercicio1;
-
-public class ContaBancaria {
-	
-	private String nomeCliente;
-	private int numConta;
-	private double saldo;
-
-}

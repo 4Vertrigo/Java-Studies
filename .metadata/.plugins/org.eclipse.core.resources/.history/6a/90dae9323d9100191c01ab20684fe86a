@@ -1,0 +1,15 @@
+package deepeningFundamentals;
+
+import java.swing.JOptionPane;
+
+public class StringToNumber {
+
+	public static void main(String[] args) {
+		
+		String anser1 = JOpitionPane.showInputDialog("Which is the first grade");
+		
+
+		
+	}
+
+}

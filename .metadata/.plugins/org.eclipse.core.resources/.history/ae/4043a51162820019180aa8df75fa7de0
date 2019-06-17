@@ -1,8 +1,0 @@
-package cursojava.exercicios.lista11;
-
-public class Agenda {
-	
-	private String nome;
-	private Contato[] contatos;
-
-}

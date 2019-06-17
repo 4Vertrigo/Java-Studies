@@ -1,8 +1,0 @@
-package cursojava.aulas.aula21;
-
-public interface class AnimalEstimacao {
-	
-	void brincar();
-	void levarPassear();
-
-}

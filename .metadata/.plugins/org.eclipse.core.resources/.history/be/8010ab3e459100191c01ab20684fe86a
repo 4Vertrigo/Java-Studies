@@ -1,0 +1,14 @@
+package deepeningFundamentals;
+
+public class TernaryOperator {
+
+	public static void main(String[] args) {
+		
+		double grade = 8.0;
+		
+		String result = grade >= 7 ? "Approved" : "Disapproved";
+		System.out.println(result);
+
+	}
+
+}

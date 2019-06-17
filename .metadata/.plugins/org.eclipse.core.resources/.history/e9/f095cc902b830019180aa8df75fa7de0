@@ -1,5 +1,0 @@
-package cursojava.exercicios.lista13.exercicio1;
-
-public abstract Figura2D extends FiguraGeometrica implements DimensaoSuperficial{
-
-}

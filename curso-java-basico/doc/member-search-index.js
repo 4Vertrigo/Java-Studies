@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"deepeningFundamentals","c":"TernaryOperator","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"deepeningFundamentals","c":"TernaryOperator","l":"TernaryOperator()","url":"%3Cinit%3E()"}]

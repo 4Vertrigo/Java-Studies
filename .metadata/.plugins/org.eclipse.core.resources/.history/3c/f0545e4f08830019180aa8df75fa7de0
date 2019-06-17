@@ -1,5 +1,0 @@
-package cursojava.exercicios.lista12.exercicio2;
-
-public class PessoaJuridica extends Contribuente{
-
-}

@@ -1,8 +1,0 @@
-package cursojava.aulas.aula21;
-
-public abstract class AnimalEstimacao {
-	
-	public abstract void brincar();
-	public abstract void levarPassear();
-
-}
