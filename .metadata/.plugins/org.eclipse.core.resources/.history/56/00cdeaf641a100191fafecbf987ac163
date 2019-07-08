@@ -1,0 +1,17 @@
+package courseADTs.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class NiceSet {
+
+	public static void main(String[] args) {
+		
+		Set<String> people = new HashSet<>();
+		
+		people.add("Jonas");
+		people.add("Maria");
+		
+	}
+
+}

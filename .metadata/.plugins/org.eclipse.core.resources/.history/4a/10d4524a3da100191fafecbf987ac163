@@ -1,0 +1,10 @@
+package courseADTs.set;
+
+public class MessySet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

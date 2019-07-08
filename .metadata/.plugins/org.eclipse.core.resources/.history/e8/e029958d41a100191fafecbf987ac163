@@ -1,0 +1,17 @@
+package courseADTs.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class MessySet {
+
+	public static void main(String[] args) {
+		
+		Set set = new HashSet();
+		set.add('a');
+		set.add("Text");
+
+		
+	}
+
+}

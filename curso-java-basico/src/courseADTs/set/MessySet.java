@@ -1,0 +1,48 @@
+package courseADTs.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class MessySet {
+
+	public static void main(String[] args) {
+		
+		Set set = new HashSet();
+		set.add('a');
+		set.add("Text");
+		set.add(1);
+		set.add(3.14);
+		set.add(false);
+		
+		System.out.println("Add...");
+		System.out.println(set.add(1));
+		System.out.println(set.add(10));
+		System.out.println("Size.." + set.size());
+		
+		System.out.println("Remove...");
+		System.out.println(set.remove("a"));
+		System.out.println(set.remove('a'));
+		System.out.println("Size..." + set.size());
+		
+		System.out.println("Contains...");
+		System.out.println(set.contains('a'));
+		System.out.println(set.contains(1));
+		
+		Set nums = new HashSet();
+		
+		nums.add(1);
+		nums.add(2);
+		nums.add(3);
+		
+		//set.addAll(nums); //Union
+		set.retainAll(nums); //Intersection
+		
+		System.out.println("Size...");
+		System.out.println(set.size());
+		
+		set.clear();
+		System.out.println(set.isEmpty());
+		
+	}
+
+}

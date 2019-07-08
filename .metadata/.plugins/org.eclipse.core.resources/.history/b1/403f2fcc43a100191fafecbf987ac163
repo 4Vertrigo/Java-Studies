@@ -1,0 +1,24 @@
+package courseADTs.map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class NiceMap {
+
+	public static void main(String[] args) {
+
+		Map<Integer, String> registredPeople = new HashMap<>();
+		
+		registredPeople.put(1, "Pedro");
+		registredPeople.put(2, "Ana");
+		registredPeople.put(3, "Bia");
+		registredPeople.put(4, "Carlos");
+		
+		
+		System.out.println(registredPeople.keySet());
+		System.out.println(registredPeople.values());
+		
+		
+	}
+
+}
