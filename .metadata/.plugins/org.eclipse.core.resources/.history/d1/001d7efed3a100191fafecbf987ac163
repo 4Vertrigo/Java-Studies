@@ -1,0 +1,27 @@
+package deepeningFundamentals;
+
+public class Strings {
+
+	public static void main(String[] args) {
+
+		String name = new String("Leonardo");
+		
+		name = "Leo" + "nardo";
+		
+		System.out.println(name.toUpperCase());
+		System.out.println(name.length());
+		System.out.println(name.substring(0, 3));
+		System.out.println(name.indexOf('d'));
+		System.out.println(name.charAt(6));
+		System.out.println(name.equalsIgnoreCase("leonardo"));
+		System.out.println(name.startsWith("Leo"));
+		System.out.println(name.isEmpty());
+		System.out.println(name.concat(" is cool").concat("!"));
+		
+		//String is immutable!
+		
+		System.out.println(name);
+		
+	}
+
+}

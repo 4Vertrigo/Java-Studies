@@ -1,0 +1,18 @@
+package deepeningFundamentals;
+
+public class Maths {
+
+	public static void main(String[] args) {
+
+		System.out.println(Maths.PI);
+		System.out.println(Maths.pow(2, 3));
+		System.out.println(Maths.abs(-10.5));
+		System.out.println(Maths.min(70, 7));
+		System.out.println(Maths.max(70, 7));
+		System.out.println(Maths.ceil(6.55));
+		System.out.println(Maths.floor(6.55));
+		System.out.println(Maths.random());
+		
+	}
+
+}
